@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch Decision Statement",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gracefully Handling Exceptions", "Gracefully Handling Exceptions\Gracefully Handling Exceptions.csproj", "{D5D76E40-DA32-4728-BF9A-56FB805F463A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events and Event-Driven", "Events and Event-Driven\Events and Event-Driven.csproj", "{5061EF30-488F-41D1-AA5B-CD082A623266}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{D5D76E40-DA32-4728-BF9A-56FB805F463A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5D76E40-DA32-4728-BF9A-56FB805F463A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5D76E40-DA32-4728-BF9A-56FB805F463A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5061EF30-488F-41D1-AA5B-CD082A623266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5061EF30-488F-41D1-AA5B-CD082A623266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5061EF30-488F-41D1-AA5B-CD082A623266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5061EF30-488F-41D1-AA5B-CD082A623266}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +81,7 @@ Global
 		{FF2D02AB-0A70-4BCA-8C4F-E9A374E7A106} = {36275A80-2391-492E-9AF2-620466420F0E}
 		{7046A0EA-B9D1-433B-BCB1-A8DB051032CD} = {36275A80-2391-492E-9AF2-620466420F0E}
 		{D5D76E40-DA32-4728-BF9A-56FB805F463A} = {36275A80-2391-492E-9AF2-620466420F0E}
+		{5061EF30-488F-41D1-AA5B-CD082A623266} = {36275A80-2391-492E-9AF2-620466420F0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7BF37E8-95CD-4EE7-8DE3-6B0D26764967}
