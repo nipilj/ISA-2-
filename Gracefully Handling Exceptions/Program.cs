@@ -17,7 +17,7 @@ namespace Gracefully_Handling_Exceptions
                 Console.WriteLine(content);
 
             }
-            catch (FileNotFoundException ex)
+            catch (FileNotFoundException)
             {
                 Console.WriteLine("There was a problem!");
                 Console.WriteLine("Make sure the name of the file is named correctly: Exampl.txt");
