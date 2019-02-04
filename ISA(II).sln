@@ -5,9 +5,11 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nädal01", "Nädal01", "{D038D7F7-9165-4399-B5F1-382643A38759}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW01_15video", "HW01_15video\HW01_15video.csproj", "{9082B5B6-1F39-4D2F-9AFB-BCAD01DA7AC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes and Methods", "HW01_15video\Classes and Methods.csproj", "{9082B5B6-1F39-4D2F-9AFB-BCAD01DA7AC2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVA-01", "MVA-01", "{36275A80-2391-492E-9AF2-620466420F0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scope and Accessibility Modifiers", "HW01_16video\Scope and Accessibility Modifiers.csproj", "{A424797E-B7B0-4AD7-92CE-2D2BAE2066EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +21,10 @@ Global
 		{9082B5B6-1F39-4D2F-9AFB-BCAD01DA7AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9082B5B6-1F39-4D2F-9AFB-BCAD01DA7AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9082B5B6-1F39-4D2F-9AFB-BCAD01DA7AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A424797E-B7B0-4AD7-92CE-2D2BAE2066EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A424797E-B7B0-4AD7-92CE-2D2BAE2066EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A424797E-B7B0-4AD7-92CE-2D2BAE2066EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A424797E-B7B0-4AD7-92CE-2D2BAE2066EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +32,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9082B5B6-1F39-4D2F-9AFB-BCAD01DA7AC2} = {36275A80-2391-492E-9AF2-620466420F0E}
 		{36275A80-2391-492E-9AF2-620466420F0E} = {D038D7F7-9165-4399-B5F1-382643A38759}
+		{A424797E-B7B0-4AD7-92CE-2D2BAE2066EF} = {36275A80-2391-492E-9AF2-620466420F0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7BF37E8-95CD-4EE7-8DE3-6B0D26764967}
