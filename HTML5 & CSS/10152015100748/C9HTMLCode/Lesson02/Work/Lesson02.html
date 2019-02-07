@@ -40,54 +40,58 @@ In this article I'll describe the World Wide Web from a high level perspective, 
 <p>A protocol was devised that specialized in allowing a request/response-style communication between two computers.  In other words, one user requests a document by typing an address for a document into a special program called a web browser, and the web browser packages up that request and sends it out into the network.  The request takes the form of a specially formatted packet of data.  You can think of this packet of information like a self-addressed stamped envelope -- containing both the address of the information requested and the address where that information should be sent back to.  This specially formatted packet is known as Hyper-text Transfer Protocol, or rather, HTTP, and for simplicity's sake you can think of it merely as an electronic envelope.  See Figure 1 for the types of information sent in the HTTP Request and HTTP Response messages.</p>  
 
 <figure>
-   <img scr="http-message.gif" alt="A diagram of the parts of an HTTP Message">
-   <figcaption>Figure 1. The HTTP Request and Response messages contains important information that allows communication back and forth between the client and the server.</figcaption>
+  <img scr="http-message.gif" alt="A diagram of the parts of an HTTP Message">
+  <figcaption>Figure 1. The HTTP Request and Response messages contains important information that allows communication back and forth between the client and the server.</figcaption>
 </figure>
-<p>The HTTP request message is routed through a series of network wires and routers (i.e., devices that know how to forward HTTP messages closer to their destination) spanning the globe using (ideally) the shortest route possible until it arrives at its destination, the web server at the address the requestor typed into the web browser.  The web server responds to the request by locating the requested document or resource (in the figure, the index.html file), packaging it up using the same HTTP style envelope, then sending the requested document back on to the network.  The connection would only take a fraction of a second and once the computer served up the request, it would not retain any information about that request in its memory.  See Figure 2 for a diagram of interactivity between the client and server computers.</p>  
-
-www-diagram.gif
-A diagram of route from the user request to the web server and back again
-Figure 2. (1) The HTTP Request is (2) routed across the internet to the (3) server which serves the (4) requested file back in the body of an HTTP Response message. (5) The HTTP Response is routed across the internet to the original requestor.  (6) The requested file is parsed and displayed in the user's web browser.
+<p>The HTTP request message is routed through a series of network wires and routers (i.e., devices that know how to forward HTTP messages closer to their destination) spanning the globe using (ideally) the shortest route possible until it arrives at its destination, the web server at the address the requestor typed into the web browser.  The web server responds to the request by locating the requested document or resource (in the figure, the index.html file), packaging it up using the same HTTP style envelope, then sending the requested document back on to the network.  The connection would only take a fraction of a second and once the computer served up the request, it would not retain any information about that request in its memory.  See Figure 2 for a diagram of interactivity between the client and server computers.</p> 
+ 
+<figure>
+  <img scr="www-diagram.gif" alt="A diagram of route from the user request to the web server and back again">
+  <figcaption>Figure 2. (1) The HTTP Request is (2) routed across the internet to the (3) server which serves the (4) requested file back in the body of an HTTP Response message. (5) The HTTP Response is routed across the internet to the original requestor.  (6) The requested file is parsed and displayed in the user's web browser.</figcaption>
+</figure>
 
 <p>Once the requested document is delivered through the network back to requestor, that document is loaded into the web browser.  The browser parses through the HTML and decides how to render (or rather, display) its content and appearance on the computer screen.</p>
 
-What Are Domain Names?  
+<h3>What Are Domain Names?</h3>  
 
-<p>The request that users type into web browsers originally looked something like this:
-
+<p>The request that users type into web browsers originally looked something like this:<br>
+<br>
 http://157.123.23.44/index.htm</p>
 
-<p>Why the series of numbers?  Each computer on this network was assigned an address, called an Internet Protocol Address, or IP Address.  This was assigned through a lower-level protocol called Transmission Control Protocol / Internet Protocol, or rather, TCP/IP.  It was the foundational technology that allowed requests to be routed to the appropriate server that contained a given resource, or rather, web page.  However, because the IP address for a computer would change occasionally for a given computer or institution, they devised a system called the Domain Name System, or rather, the DNS, to turn a friendly name like:
-
-mit.edu
-
-... into the actual "location", like:
-
+<p>Why the series of numbers?  Each computer on this network was assigned an address, called an Internet Protocol Address, or IP Address.  This was assigned through a lower-level protocol called Transmission Control Protocol / Internet Protocol, or rather, TCP/IP.  It was the foundational technology that allowed requests to be routed to the appropriate server that contained a given resource, or rather, web page.  However, because the IP address for a computer would change occasionally for a given computer or institution, they devised a system called the Domain Name System, or rather, the DNS, to turn a friendly name like:<br>
+<br>
+mit.edu<br>
+<br>
+... into the actual "location", like:<br>
+<br>
 18.72.0.3</p>
 
 <p>A system of top-level Domain Names was created ... .edu for educational institutions, .mil for Military, .gov for Government, .net for Network related resources, .org for Non-profit organizations, .com for Commercial organizations, etc.  Later, other countries and a plethora of top-level domains were added and others for commercial and other interests.</p>
 
 <p>The web browser will query databases of domain names and their associated IP Addresses and will translate the requests automatically for the user without his or her knowledge.  Typically, each Internet Service Provider has a Domain Name System server that can be queried for resolving Domain Names into IP Addresses.  The databases that contain this Domain Name information stay synchronized around the globe, although sometimes the synchronization process can take minutes or hours to complete.</p>
 
-The Purpose for Standards Groups
+<h3>The Purpose for Standards Groups</h3>
 
 <p>At every step of the way, one or more organizations were formed to help identify standards for these technologies comprised of experts and luminaries who were pushing these technologies forward.  They would meet both virtually and in person to define and discuss the merits of adding new features to a given standard and would encourage organizations who were creating hardware and software to follow these standards so that products from different vendors could work together seamlessly.  Perhaps one of the most influential and important standards body you will hear about is the W3C, or rather, the World Wide Web Consortium.  They were one of the groups responsible for the latest version of HTML, version 5.  Another is the WHATWG, or rather, the Web Hypertext Application Technology Working Group, which is comprised of a subset of the W3C and several additional experts and organizations that have a  vested interest in the vitality of the World Wide Web.  The background of HTML5, the previous versions of HTML, as well as the standards organizations involved is fascinating because you get a peek into both the process and the politics of these organizations.</p>
 
-Recap of the World Wide Web Technical Overview
+<h2>Recap of the World Wide Web Technical Overview</h2>
 
 <p>From a purely technical perspective, you should now understand a few things:</p>
 
-First of all, hopefully you now have an answer to the question everyone first starting out asks: "why the heck did they make URLs so convoluted?  Wouldn't it be easier to just type in 'microsoft' instead of 'http://www.microsoft.com'?"  There's an evolution of technologies, and furthermore, it was never intended for use by the masses.  At some point commercialized and individual access to the internet dwarfed the intended use, however the technologies created 30 years ago are still in play.
 
-Second, hopefully you will begin see the purpose of things like http:// ... in which you are saying you want to access a specific channel of traffic, HTTP, or rather, World Wide Web traffic, as opposed to FTP (File Transfer Protocol) for working with large files, SMTP (Simple Mail Transfer Protocol) for sending email, and so on.
+<ol>
+<li>First of all, hopefully you now have an answer to the question everyone first starting out asks: "why the heck did they make URLs so convoluted?  Wouldn't it be easier to just type in 'microsoft' instead of 'http://www.microsoft.com'?"  There's an evolution of technologies, and furthermore, it was never intended for use by the masses.  At some point commercialized and individual access to the internet dwarfed the intended use, however the technologies created 30 years ago are still in play.</li>
 
-Third, hopefully you see the purpose of .com, .edu, .net and so on ... at least, you understand the original purpose, and you understand how those domain names are translated into the actual IP Addresses that are utilized by routers to move traffic around the internet to it's intended destination.
+<li>Second, hopefully you will begin see the purpose of things like http:// ... in which you are saying you want to access a specific channel of traffic, HTTP, or rather, World Wide Web traffic, as opposed to FTP (File Transfer Protocol) for working with large files, SMTP (Simple Mail Transfer Protocol) for sending email, and so on.</li>
 
-Fourth, hopefully you can see that the specifics of HTML - and all other standards - are decided on by a body of individuals who understand what is needed and propose and debate the merits of adding or removing parts of a given specification.  You should also see the purpose for these standards - so that organizations creating hardware and software to support the World Wide Web can achieve a high degree of interoperability.
+<li>Third, hopefully you see the purpose of .com, .edu, .net and so on ... at least, you understand the original purpose, and you understand how those domain names are translated into the actual IP Addresses that are utilized by routers to move traffic around the internet to it's intended destination.</li>
 
-Fifth, hopefully you can see the role that each component plays in the exchange of documents and other resources ... the web browser is responsible for interacting with the end user who requests a document by typing in a web address or clicks on a hyperlink.  It also packages up that request and begins the process of requesting the document from it's host, the computer called the web server.  The message is packaged using the HTTP protocol, which you can think of as an electronic envelope geared towards stateless request / response style transmissions between two computers.  Routers are special devices that know how to interpret the address encoded in electronic envelopes, or rather, the HTTP messages, and route them closer to their ultimate destination.  A web server is merely a computer at a given web address that is listening for HTTP requests, and if the address is valid, returns the requested document or resource using the same HTTP message addressing as a response.
+<li>Fourth, hopefully you can see that the specifics of HTML - and all other standards - are decided on by a body of individuals who understand what is needed and propose and debate the merits of adding or removing parts of a given specification.  You should also see the purpose for these standards - so that organizations creating hardware and software to support the World Wide Web can achieve a high degree of interoperability.</li>
 
-One Final Note About Our Overview
+<li>Fifth, hopefully you can see the role that each component plays in the exchange of documents and other resources ... the web browser is responsible for interacting with the end user who requests a document by typing in a web address or clicks on a hyperlink.  It also packages up that request and begins the process of requesting the document from it's host, the computer called the web server.  The message is packaged using the HTTP protocol, which you can think of as an electronic envelope geared towards stateless request / response style transmissions between two computers.  Routers are special devices that know how to interpret the address encoded in electronic envelopes, or rather, the HTTP messages, and route them closer to their ultimate destination.  A web server is merely a computer at a given web address that is listening for HTTP requests, and if the address is valid, returns the requested document or resource using the same HTTP message addressing as a response.</li>
+</ol>
+
+<h2>One Final Note About Our Overview</h2>
 
 <p>Let me add that (a) I distilled this down and over-simplified it to keep it simple at a high level.  You could spend months or years learning more about any single component of what I just described in a few sentences, and (b) after 30 years of use and technological advancement, web development has gotten a LOT more sophisticated.  And most pertinent to this series of lessons, web development techniques and technologies have become much more sophisticated.  While most of the underpinnings are still in play, some of the technologies have been refined and expanded.</p>  
 
@@ -98,20 +102,22 @@ One Final Note About Our Overview
 
 
 <article>
-How Web Browsers Parse HTML
+<h1>How Web Browsers Parse HTML</h1>
 
 <p>One final topic I want to talk about that affects modern web development is the implementations of various web browsers.  As you'll recall, once the requested web page has been returned, it will be parsed by a web browser then displayed on screen.</p>
 
-There are four major parsing and rendering engines that are popular today.
+<p>There are four major parsing and rendering engines that are popular today.</p>
 
-Trident, the web browser engine from Internet Explorer, is used by many applications on the Microsoft Windows platform, such as netSmart, Outlook Express, some versions of Microsoft Outlook, and the mini-browsers in Winamp and RealPlayer.
 
-KDE's open-source KHTML engine is used in KDE's Konqueror web browser and was the basis for WebKit, the rendering engine in Apple's Safari and Google's Chrome web browsers.
+<ul>
+<li>Trident, the web browser engine from Internet Explorer, is used by many applications on the Microsoft Windows platform, such as netSmart, Outlook Express, some versions of Microsoft Outlook, and the mini-browsers in Winamp and RealPlayer.</li>
 
-Gecko, the Mozilla project's open-source web browser engine, is used by a variety of products derived from the Mozilla code base, including the Firefox web browser, the Thunderbird e-mail client, and SeaMonkey internet suite.
+<li>KDE's open-source KHTML engine is used in KDE's Konqueror web browser and was the basis for WebKit, the rendering engine in Apple's Safari and Google's Chrome web browsers.</li>
 
-Opera Software's proprietary Presto engine is licensed to a number of other software vendors, and is used in Opera's own web browser.
+<li>Gecko, the Mozilla project's open-source web browser engine, is used by a variety of products derived from the Mozilla code base, including the Firefox web browser, the Thunderbird e-mail client, and SeaMonkey internet suite.</li>
 
+<li>Opera Software's proprietary Presto engine is licensed to a number of other software vendors, and is used in Opera's own web browser.</li>
+</ul>
 <p>They are *mostly* the same, in so much that a web page will look mostly the same regardless of which web browser it is loaded into.  However it is the differences between them that most people discuss because it provides design challenges.</p>
 
 What do I mean when I use the terms "parse" and "render"?  
