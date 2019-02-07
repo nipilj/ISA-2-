@@ -17,13 +17,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "References to Assemblies", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections", "Collections\Collections.csproj", "{51CB31A3-D759-4801-BBD7-8D52415A359C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{FF2D02AB-0A70-4BCA-8C4F-E9A374E7A106}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ", "LINQ\LINQ.csproj", "{FF2D02AB-0A70-4BCA-8C4F-E9A374E7A106}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch Decision Statement", "Switch Decision Statement\Switch Decision Statement.csproj", "{7046A0EA-B9D1-433B-BCB1-A8DB051032CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch Decision Statement", "Switch Decision Statement\Switch Decision Statement.csproj", "{7046A0EA-B9D1-433B-BCB1-A8DB051032CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gracefully Handling Exceptions", "Gracefully Handling Exceptions\Gracefully Handling Exceptions.csproj", "{D5D76E40-DA32-4728-BF9A-56FB805F463A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gracefully Handling Exceptions", "Gracefully Handling Exceptions\Gracefully Handling Exceptions.csproj", "{D5D76E40-DA32-4728-BF9A-56FB805F463A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events and Event-Driven", "Events and Event-Driven\Events and Event-Driven.csproj", "{5061EF30-488F-41D1-AA5B-CD082A623266}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events and Event-Driven", "Events and Event-Driven\Events and Event-Driven.csproj", "{5061EF30-488F-41D1-AA5B-CD082A623266}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nädal02", "Nädal02", "{BE26931C-9D90-45C3-9C76-043FFDD5A6D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVA-02", "MVA-02", "{7C701597-EEA5-4094-AC0C-577936FA20D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -82,6 +86,7 @@ Global
 		{7046A0EA-B9D1-433B-BCB1-A8DB051032CD} = {36275A80-2391-492E-9AF2-620466420F0E}
 		{D5D76E40-DA32-4728-BF9A-56FB805F463A} = {36275A80-2391-492E-9AF2-620466420F0E}
 		{5061EF30-488F-41D1-AA5B-CD082A623266} = {36275A80-2391-492E-9AF2-620466420F0E}
+		{7C701597-EEA5-4094-AC0C-577936FA20D5} = {BE26931C-9D90-45C3-9C76-043FFDD5A6D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7BF37E8-95CD-4EE7-8DE3-6B0D26764967}
